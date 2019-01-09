@@ -29,6 +29,10 @@ public class PersonTest {
 
 System.out.printf(" The names of the people in the city are:  ");
 System.out.pringf( person1.getName());
+System.out.pringf( person2.getName());
+System.out.pringf( person3.getName());
+System.out.pringf( person4.getName());
+System.out.pringf( person5.getName());
 
     }
 }
