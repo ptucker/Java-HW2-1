@@ -1,0 +1,3 @@
+public class CityHall extends Building {
+    //array of current occupant...
+}
