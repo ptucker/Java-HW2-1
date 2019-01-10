@@ -28,7 +28,7 @@ public class PersonTest {
 
     Person person6 = new Person(); // new person object
     person6.setName ("Sam \n");
-    person6.setAge(16);
+    person6.setAge(27);
     person6.setPhoneNumber(587441996);
 
     Person person7 = new Person(); // new person object
@@ -51,10 +51,17 @@ public class PersonTest {
     person10.setAge(7);
     person10.setPhoneNumber(121232354);
 
-    //System.out.printf( person1.toString());
 
+    Building building1 = new Building(); //new buidling object 
+    building1.setBuildingName("School \n");
+    building1.setBuildingAddress("300 W Hawthorne rd \n");
+
+    Building building2 = new Building(); //new buidling object 
+    building2.setBuildingName("School \n");
+    building2.setBuildingAddress("300 W Hawthorne rd\n");
+   
+//outputs the name of all the people in a loop
 System.out.printf("The names of the people in the city are:  \n");
-
 ArrayList<Person> Population = new ArrayList <>();
 Population.add(person1);
 Population.add(person2);
@@ -66,17 +73,55 @@ Population.add(person7);
 Population.add(person8);
 Population.add(person9);
 Population.add(person10);
-//outputs the name of all the people in a loop
 for (int i=0; i<Population.size();i++)
 {
    System.out.printf(Population.get(i).getName());
 }
+
 //output the names of all buildings in a loop
 System.out.printf("What are the existing buildings?:  \n");
+ArrayList<Building> Buildingz = new ArrayList <>();
+Buildingz.add(building1);
+Buildingz.add(building2);
+for (int i =0; i<Buildingz.size();i++)
+{
+    System.out.printf (Buildingz.get(i).getBuildingName());
+    System.out.printf(Buildingz.get(i).getBuildingAddress());
+}
 
-//which kids and teachers are in school, and which police officers are in City Hall
+//which kids are in school
+System.out.printf("which kids are in school:  \n");
+for (int i =0; i<Population.get(i).getName();i++) {
 
-//o pay those persons who are employees
+if ( Population.getAge()<18)
+{
+    System.out.printf(Population.getName());
+    CurInSchool.add(Population.getName());
+}
+    }
+//which teachers are in school
+System.out.printf("which teachers are in school:  \n");
+for (int i =0; i<Population.get(i).getName();i++) {
+
+if ( Population.getAge()>18 && Population.getAge()<40)
+{
+    System.out.printf(Population.getName());
+    CurInSchool.add(Population.getName());
+}
 
     }
+//which police officers are in City Hall
+System.out.printf("Which police officers are in City Hall?: \n");
+for (int i=0; i<Population.get(i).getName()) {
+    if (Population.getAge()>40) 
+    {
+        System.out.printf(Population.getName());
+        CurInCityHall.add(Population.getName());
+    }
+}
+//to pay those persons who are employees
+
+
+         }   
+
 }
