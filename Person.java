@@ -3,9 +3,6 @@ public class Person {
     private int Age;
     public int PhoneNumber;
 
-
-//toString will return something later in PersonTest
-   
     public void setName (String newName)
     {
         Name = newName;
@@ -28,7 +25,7 @@ public class Person {
     }
     public int getPhoneNumber ()
     {
-        return int;
+        return PhoneNumber;
     }
     
     //public String toString(){
