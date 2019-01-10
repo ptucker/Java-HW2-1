@@ -1,6 +1,6 @@
 public class Building {
-    String BuildingName;
-    String BuildingAddress;
+private String BuildingName;
+private String BuildingAddress;
 
 public String getBuildingName()
 {
@@ -9,6 +9,14 @@ public String getBuildingName()
 public String getBuildingAddress()
 {
     return BuildingAddress;
+}
+public void setBuildingAddress(String Baddress)
+{
+BuildingAddress = Baddress;
+}
+public void setBuildingName(String Bname)
+{
+BuildingName = Bname;
 }
 
     
