@@ -1,9 +1,14 @@
 public interface Employee {
-    int Pay;
+
+    boolean IsATeacher(Employee t);
+    boolean IsApoliceman(Employee p);
+
+
+    int Money;
     String EmployeeID; 
 //Method to give employees their pay
 public String GetPay(){
-return Pay;
+return Money;
 }
 //method to ask employee their empoyee ID
 public String GetEmployeeID(){
