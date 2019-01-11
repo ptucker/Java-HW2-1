@@ -51,14 +51,20 @@ public class PersonTest {
     person10.setAge(7);
     person10.setPhoneNumber(121232354);
 
+//---------------------------------------------------------------
 
-    Building building1 = new Building(); //new buidling object 
-    building1.setBuildingName("School \n");
-    building1.setBuildingAddress("300 W Hawthorne rd \n");
+    School building1 = new School(); //new buidling object 
+    building1.setSchoolName("North School \n");
+    building1.setSchoolAdress("300 N Hawthorne rd \n");
 
-    Building building2 = new Building(); //new buidling object 
-    building2.setBuildingName("School \n");
-    building2.setBuildingAddress("300 W Hawthorne rd\n");
+    School building2 = new School(); //new buidling object 
+    building2.setSchoolName("South school \n");
+    building2.setSchoolAdress("300 S Hawthorne rd\n");
+
+    CityHall building3 = new CityHall();
+    building3.setCityHallName("South City hall \n");
+    building3.setCityHallAdress("300 S Edward rd\n"); 
+
    
 //outputs the name of all the people in a loop
 System.out.printf("The names of the people in the city are:  \n");
@@ -96,7 +102,7 @@ for (int i =0; i<Population.size();i++) {
 if ( Population.get(i).getAge()<18)
 {
     System.out.printf(Population.get(i).getName());
-    CurInSchool.add(Population.get(i).getName());
+    building1.CurInSchool.add(Population.get(i));
 }
     }
 //which teachers are in school
@@ -106,7 +112,7 @@ for (int i =0; i<Population.size();i++) {
 if ( Population.get(i).getAge()>18 && Population.get(i).getAge()<40)
 {
     System.out.printf(Population.get(i).getName());
-    CurInSchool.add(Population.get(i).getName());
+    building1.CurInSchool.add(Population.get(i));
 }
 
     }
@@ -116,16 +122,25 @@ for (int i=0; i<Population.size(); i++) {
     if (Population.get(i).getAge()>40) 
     {
         System.out.printf(Population.get(i).getName());
-        CurInCityHall.add(Population.get(i).getName());
+        building3.CurInCityHall.add(Population.get(i));
     }
 }
 //to pay those persons who are employees
-for ( int i =0; i<Population.size();i++)
-{
-    
+
+//for ( int i =0; i<Population.size();i++)
+//{
+//if (Population.get(i).getName()==CurInCityHall.get(i).getName())
+//{
+    //pay this person
+//}
+//if (Population.get(i).getName()== CurInSchool.get(i).getName() && CurInSchool.get(i).getAge()>18 )
+//{
+    //pay this person...
+//}
+//}
+         }   
+
 }
 
-
-         }   
 
 }
