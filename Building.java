@@ -20,4 +20,9 @@ BuildingName = Bname;
 }
 
     //write a constructor...?
+    //PT -- It'd be a good idea
+    //public Building(String name, String address) {
+        //BuildingName = name;
+        //BuildingAddress = address;
+    //}
 }
