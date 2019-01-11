@@ -19,5 +19,5 @@ public void setBuildingName(String Bname)
 BuildingName = Bname;
 }
 
-    
+    //write a constructor...?
 }
