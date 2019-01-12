@@ -1,7 +1,12 @@
-public interface Employee {
+/**
+* This class models an Employee's pay and their ID
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
 
-    boolean IsATeacher(Employee t);
-    boolean IsApoliceman(Employee p);
+public interface Employee {
+  //--------------------------errors--------------------------------
+  //  ArrayList<Employee> CurEmployee = new ArrayList<>();
     //int Money;
     //String EmployeeID;
 
@@ -14,9 +19,12 @@ public interface Employee {
 //------------------------errors from int Money and String EmployeeID
 
 
-//Method to give employees their pay
+//Methods to give employees their pay
 public String GetPay();
+public void SetPay(int payy);
+
 //method to ask employee their empoyee ID
 public String GetEmployeeID();
-    
+
+
 }
