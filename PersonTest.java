@@ -1,6 +1,13 @@
+/**
+* This is the main class that models a city
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
+
 import java.util.ArrayList;
 public class PersonTest {
     public static void main(String[] args) {
+    //-------------------------------------------------------
     Person person1 = new Person(); // new person object
     person1.setName ("Mia \n");
     person1.setAge(21);
@@ -54,16 +61,23 @@ public class PersonTest {
 //---------------------------------------------------------------
 
     School building1 = new School(); //new buidling object 
-    building1.setSchoolName("North School \n");
-    building1.setSchoolAdress("300 N Hawthorne rd \n");
+    building1.setBuildingName("North School \n");
+    building1.setBuildingAddress("300 N Hawthorne rd \n");
 
     School building2 = new School(); //new buidling object 
-    building2.setSchoolName("South school \n");
-    building2.setSchoolAdress("300 S Hawthorne rd\n");
+    building2.setBuildingName("South school \n");
+    building2.setBuildingAddress("300 S Hawthorne rd\n");
 
     CityHall building3 = new CityHall();
-    building3.setCityHallName("South City hall \n");
-    building3.setCityHallAdress("300 S Edward rd\n"); 
+    building3.setBuildingName("South City hall \n");
+    building3.setBuildingAddress( "546841 b \n") ;
+//----------------------------------------------------------------
+Police PolicePay = new Police();
+PolicePay.SetPay(5000);
+
+Teacher TeacherPay = new Teacher();
+TeacherPay.SetPay(2000);
+//----------------------------------------------------------------
 
    
 //outputs the name of all the people in a loop
@@ -89,6 +103,7 @@ System.out.printf("What are the existing buildings?:  \n");
 ArrayList<Building> Buildingz = new ArrayList <>();
 Buildingz.add(building1);
 Buildingz.add(building2);
+Buildingz.add(building3);
 for (int i =0; i<Buildingz.size();i++)
 {
     System.out.printf (Buildingz.get(i).getBuildingName());
@@ -103,6 +118,7 @@ if ( Population.get(i).getAge()<18)
 {
     System.out.printf(Population.get(i).getName());
     building1.CurInSchool.add(Population.get(i));
+    
 }
     }
 //which teachers are in school
@@ -114,7 +130,6 @@ if ( Population.get(i).getAge()>18 && Population.get(i).getAge()<40)
     System.out.printf(Population.get(i).getName());
     building1.CurInSchool.add(Population.get(i));
 }
-
     }
 //which police officers are in City Hall
 System.out.printf("Which police officers are in City Hall?: \n");
@@ -123,24 +138,28 @@ for (int i=0; i<Population.size(); i++) {
     {
         System.out.printf(Population.get(i).getName());
         building3.CurInCityHall.add(Population.get(i));
+
     }
 }
 //to pay those persons who are employees
 
-//for ( int i =0; i<Population.size();i++)
-//{
-//if (Population.get(i).getName()==CurInCityHall.get(i).getName())
-//{
-    //pay this person
-//}
-//if (Population.get(i).getName()== CurInSchool.get(i).getName() && CurInSchool.get(i).getAge()>18 )
-//{
-    //pay this person...
-//}
-//}
-         }   
+//Policement in city hall
+for ( int i =0; i<Population.size();i++)
+ {
+     int index = building3.Search(Population.get(i));
+     if (index != -1)
+     {
+         Population.get(i).GetPay();
+     }
+ }
+
+ //Teachers in school
+ 
+
+
+
+}
 
 }
 
 
-}
