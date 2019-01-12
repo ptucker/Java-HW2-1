@@ -1,7 +1,12 @@
+/**
+* This class models a person's age name and phone number
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
 public class Person {
     private String Name;
     private int Age;
-    public int PhoneNumber;
+    private int PhoneNumber;
 
     public void setName (String newName)
     {
@@ -13,7 +18,10 @@ public class Person {
     }
     public void setAge (int newAge)
     {
+        if(newAge>0 && newAge<100)
+        {
         Age = newAge;
+        }
     }
     public int getAge ()
     {
@@ -28,8 +36,5 @@ public class Person {
         return PhoneNumber;
     }
     
-    //public String toString(){
-        //return Name + " is " + Age + " years old. " + Name  + " has the number: " + PhoneNumber;
-   // }
 
 }
