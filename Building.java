@@ -1,6 +1,11 @@
+/**
+* This class models a person's age name and phone number
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
 public class Building {
-private String BuildingName;
-private String BuildingAddress;
+protected String BuildingName;
+protected String BuildingAddress;
 
 public String getBuildingName()
 {
@@ -18,6 +23,14 @@ public void setBuildingName(String Bname)
 {
 BuildingName = Bname;
 }
-
-    //write a constructor...?
+//constructor
+public Building(String name, String address){
+    BuildingName = name;
+    BuildingAddress =address;
+}
+    
+    public Building ()
+    {
+        
+    }
 }
