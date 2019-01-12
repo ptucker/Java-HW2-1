@@ -1,3 +1,8 @@
+/**
+* This class models a city
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
 public class City { 
 //You should be able to output the names of all people in a loop
 //You should be able to output the names of all buildings in a loop
