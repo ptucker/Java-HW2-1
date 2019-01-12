@@ -1,7 +1,38 @@
-public class Police extends Person implement Employee {
+/**
+* This class models a police
+* @author Karen Sobtafo
+* @version 1.00, 11 January 2019
+*/
+public class Police extends Person implements Employee {
     enum Role {Patrol, Sargent, Captain, Cheif;}
-    // this person is in a... 
-boolean IsATeacher(Employee t){return false;}
-boolean IsApoliceman(Employee p){return true;}
+    // this person is in a.. 
+
+int Pay;
+String EmployeeID;
+
+ 
+ 
+ public int GetPay()
+ {
+    return Pay;
+ }
+
+ public void SetPay (int payy)
+ {
+    Pay = payy;
+ }
+
+public String GetEmployeeID()
+{
+    return EmployeeID;
+
 }
+
+//Role member variable to store each police person's position
+//Role r;
+ //public Police(Role role) { r = role; }
+}
+
+
+
 
