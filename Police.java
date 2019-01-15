@@ -8,7 +8,7 @@ public class Police extends Person implements Employee {
     // this person is in a.. 
 
 int Pay;
-String EmployeeID;
+int EmployeeID;
 
  
  
@@ -22,7 +22,7 @@ String EmployeeID;
     Pay = payy;
  }
 
-public String GetEmployeeID()
+public int GetEmployeeID()
 {
     return EmployeeID;
 
