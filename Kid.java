@@ -1,7 +1,7 @@
 /**
 * This class models a Kid's favorite candy
 * @author Karen Sobtafo
-* @version 1.00, 11 January 2019
+* @version 1.00, 14 January 2019
 */
 public class Kid extends Person{
     //favorite candy
@@ -10,7 +10,7 @@ public class Kid extends Person{
     {
         FavCandy = Fav;
     }
-    public getFavCandy()
+    public String getFavCandy()
     {
         return FavCandy;
     }
