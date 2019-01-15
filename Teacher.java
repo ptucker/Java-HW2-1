@@ -8,7 +8,7 @@ public class Teacher extends Person implements Employee {
     String certification;
     
 int Pay;
-String EmployeeID;
+int EmployeeID;
 
 public int GetPay()
  {
@@ -20,7 +20,7 @@ public int GetPay()
     Pay = payy;
  }
 
-public String GetEmployeeID()
+public int GetEmployeeID()
 {
     return EmployeeID;
 }
