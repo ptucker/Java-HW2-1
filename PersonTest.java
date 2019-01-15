@@ -149,17 +149,17 @@ for ( int i =0; i<Population.size();i++)
      int index = building3.Search(Population.get(i));
      if (index != -1)
      {
-         Population.get(i).GetPay(); //should i use PolicePay that i have in line 75 ?
+        // CurInCityHall.get(i).PolicePay.GetPay();
      }
  }
 
  //Teachers in school
  for ( int i =0; i<Population.size();i++)
  {
-     int index = building1.Search(Population.get(i));
+     int index = building1.SearchSchool(Population.get(i));
      if (index != -1)
      {
-         Population.get(i).GetPay();
+         //CurInSchool.get(i).TeacherPay.GetPay();
      }
  }
 
@@ -168,5 +168,6 @@ for ( int i =0; i<Population.size();i++)
 }
 
 }
+
 
 
