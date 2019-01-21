@@ -7,6 +7,7 @@ public class Building {
 protected String BuildingName;
 protected String BuildingAddress;
 
+    //PT -- javadoc for functions. -1
 public String getBuildingName()
 {
     return BuildingName;
@@ -31,6 +32,6 @@ public Building(String name, String address){
     
     public Building ()
     {
-        
+       
     }
 }
