@@ -28,6 +28,7 @@ public int GetEmployeeID()
 
 }
 
+    //PT -- need a constructor. -1
 //Role member variable to store each police person's position
 //Role r;
  //public Police(Role role) { r = role; }
