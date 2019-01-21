@@ -7,7 +7,8 @@ public class Person {
     private String Name;
     private int Age;
     private int PhoneNumber;
-
+    
+    //PT -- missing javadocs for public functions. -1
     public void setName (String newName)
     {
         Name = newName;
@@ -18,6 +19,7 @@ public class Person {
     }
     public void setAge (int newAge)
     {
+        //PT -- good!
         if(newAge>0 && newAge<100)
         {
         Age = newAge;
@@ -29,6 +31,7 @@ public class Person {
     }
     public void setPhoneNumber ( int newPhoneNumber)
     {
+        //PT -- validate phone number. -1
         PhoneNumber = newPhoneNumber;
     }
     public int getPhoneNumber ()
