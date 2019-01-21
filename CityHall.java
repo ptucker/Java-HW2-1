@@ -10,10 +10,12 @@ ArrayList<Person> CurInCityHall = new ArrayList <>();//array of current occupant
 //Constructor inherited form building
    public CityHall ()  { super("north city hall", "1235"); }
 
+   //PT -- make these javadoc comments. -1
 //method to search for people in CityHall
 public int Search(Person p){
    for (int i =0; i<CurInCityHall.size();i++)
    {
+      //PT -- don't need this line.
   CurInCityHall.get(i);
 
 if (CurInCityHall.get(i).getName() == p.getName())
