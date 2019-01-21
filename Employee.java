@@ -5,6 +5,7 @@
 */
 
 public interface Employee {
+  //PT -- Right. Interfaces can't have code. They are only function definitions. If you want code, make this an abstract class.
   //--------------------------errors--------------------------------
   //  ArrayList<Employee> CurEmployee = new ArrayList<>();
     //int Money;
